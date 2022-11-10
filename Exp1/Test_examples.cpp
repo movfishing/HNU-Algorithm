@@ -17,7 +17,7 @@ void menu()
 
 string Q3()
 {
-    int nums = (rand() % 6) + 1;
+    int nums = (rand() % 2) + 1;
     string s;
     char ch = 'a';
     for (int i = 0; i < nums; i++)
@@ -47,9 +47,9 @@ int main()
     int x;
     int y;
     int temp;
-    int arrlen = rand() % 100; // 1,2题的数组长度
+    int arrlen = 10; // 1,2题的数组长度
     cin >> n;
-    int num = 1000; //测试用例个数
+    int num = 1; //测试用例个数
     clock_t start_time = clock();
     switch (n)
     {
