@@ -32,12 +32,16 @@ void packet(vector<int> &w, vector<int> &v, int c)
     }
     while (1)
     {
+        if (temp.size() == 0)
+            break;
         int prev = temp.top();
         temp.pop();
         now_c += w[prev];
         t_value -= v[prev];
         if (prev == w.size() - 1)
         {
+            if (temp.size() == 0)
+                break;
             prev = temp.top();
             temp.pop();
             now_c += w[prev];

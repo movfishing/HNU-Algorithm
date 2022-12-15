@@ -8,7 +8,6 @@ using namespace std;
 
 vector<int> maxOrder(vector<int> &arr)
 {
-    vector<int> temp(arr.size(), 1);
     vector<int> tail(arr.size(), 0);
     vector<int> sign(arr.size(), 0);
     vector<int> update(arr.size(), 0);

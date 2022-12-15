@@ -18,7 +18,7 @@ void menu()
 string Q3()
 {
     string s;
-    int len = rand() % 1000;
+    int len = 100;
     char ch = 'a';
     while (len--)
     {
@@ -41,9 +41,9 @@ int main()
     int x;
     int y;
     int temp;
-    int arrlen = 100; // 题1的节点个数
+    int arrlen = 500; // 题1的节点个数
     cin >> n;
-    int num = 100; //测试用例个数
+    int num = 1000; //测试用例组数
     clock_t start_time = clock();
     switch (n)
     {
@@ -100,7 +100,7 @@ int main()
         out << num << endl;
         while (num--)
         {
-            int things = rand() % 30;
+            int things = 10;
             out << things << endl;
             int c = rand();
             out << c << endl;
@@ -131,7 +131,7 @@ int main()
         out << num << endl;
         while (num--)
         {
-            int length = rand();
+            int length = 1000;
             out << length << endl;
             for (int i = 0; i < length; i++)
             {
